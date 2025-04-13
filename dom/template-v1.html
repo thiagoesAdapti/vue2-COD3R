@@ -9,6 +9,7 @@
 <body>
   <div id="app">
     <p>{{ greeting() }}</p>
+    <a :href="link">Google</a>
   </div>
 </body>
 </html>
@@ -18,6 +19,7 @@
     el: '#app',
     data: {
       name: 'Thiago',
+      link: 'https://www.google.com'
     },
     methods: {
       greeting() {
@@ -31,4 +33,5 @@
   *** Aula 03 ***
 
   - Referenciar methods
+  - Vincular atributos (v-bind:atributo => :atributo)
 -->
