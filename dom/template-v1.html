@@ -8,6 +8,7 @@
 </head>
 <body>
   <div id="app">
+    <p v-once>{{ name }}</p>
     <p>{{ greeting() }}</p>
     <a :href="link">Google</a>
   </div>
@@ -23,6 +24,7 @@
     },
     methods: {
       greeting() {
+        this.name = 'Thiago Figueiredo'
         return ('Bem-vindo, ' + this.name + '!')
       }
     }
@@ -34,4 +36,5 @@
 
   - Referenciar methods
   - Vincular atributos (v-bind:atributo => :atributo)
+  - Diretiva v-once
 -->
