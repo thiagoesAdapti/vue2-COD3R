@@ -11,6 +11,8 @@
     <p v-once>{{ name }}</p>
     <p>{{ greeting() }}</p>
     <a :href="link">Google</a>
+    <hr>
+    <p v-html="linkHtml"></p>
   </div>
 </body>
 </html>
@@ -20,7 +22,8 @@
     el: '#app',
     data: {
       name: 'Thiago',
-      link: 'https://www.google.com'
+      link: 'https://www.google.com',
+      linkHtml: '<a href="https://www.google.com">Google</a>'
     },
     methods: {
       greeting() {
@@ -36,5 +39,7 @@
 
   - Referenciar methods
   - Vincular atributos (v-bind:atributo => :atributo)
-  - Diretiva v-once
+  - Diretivas: 
+              v-once
+              v-html
 -->
