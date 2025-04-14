@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 4</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+  <div id="desafio">
+    <!-- 1) Preencha a tag <p> abaixo com o seu nome e idade - usando interpolação -->
+    <p>Usando VueJS - {{ name }} ({{ age }})</p>
+
+    <!-- 2) Exiba sua idade multiplicada por 3 -->
+    <p>{{ multiply() }}</p>
+
+    <!-- 3) Chame uma função para exibir um número randomico
+            entre 0 e 1 (Math.random()) -->
+    <p>{{ Math.random() }}</p>
+
+    <!-- 4) Procure uma imagem no google e exiba na tag img
+            fazendo o binding no atributo "src" -->
+    <div>
+      <img :src="img" :alt="alt" height="400">
+    </div>
+
+    <!-- 5) Inicialize o input com o seu nome (use o atributo "value") -->
+    <div>
+      <input type="text" :value="name">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+<!-- 
+  *** Aula 04 ***
+
+  - Resolução do desafio 01
+-->
